@@ -1,0 +1,11 @@
+{ "name": "Exercise", 
+  "sections": [
+    "intro.md",
+    "exercise.md",
+    "timer1.md",
+    "retrospective.md",
+    "exercise.md",
+    "timer2.md",
+    "conclusion.md"
+  ]
+}

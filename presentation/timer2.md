@@ -1,6 +1,7 @@
 !SLIDE countdown
 
-## Objective
+## Select at least __two__ configuration inputs
+## Create a unified configuration that merges them
 
 <div id="countdown_dashboard2" style="margin-left: 372px; width: 350px; height:150px;">
   

@@ -44,6 +44,15 @@ a:visited {
   padding: .5em;
 }
 
+/* Ruby Source Code */
+
+.sh_ruby {
+  background-image:url('images/cross_scratches.png'); 
+  border-radius :15px;
+  
+}
+
+
 /* Button Style */
 
 .button {
@@ -61,7 +70,7 @@ a:visited {
 	display:inline-block;
 	color:#ffffff;
 	font-family:arial;
-	font-size:40px;
+	font-size:40vpx;
 	font-weight:bold;
 	padding:6px 24px;
 	text-decoration:none;

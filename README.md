@@ -20,27 +20,33 @@ For this exercise choose at least two input sources:
 
 1. YML
 
-    > `fixtures/configuration.yml`
+    > Configuration: `fixtures/configuration.yml`
+    > Example      : `lib/yml.rb`
 
 2. YML (User specific)
 
-    > `fixtures/user-configuration.yml`
+    > Configuration: `fixtures/user-configuration.yml`
+    > Example      : `lib/yml.rb`
     
 3. Command-Line Parameters
 
-    > Examples in `fixtures/command-parameters.md`
-
+    > Commands: `fixtures/command-parameters.md`
+    > Example : `lib/command.rb`
+    
 4. Environment Variables
 
-    > Examples in `fixtures/environment-parameters.md`
+    > Commands: `fixtures/environment-parameters.md`
+    > Example : `lib/environment.rb`
     
 5. JSON
 
-    > `fixtures/configuration.json`
+    > Configuration: `fixtures/configuration.json`
+    > Example      : `lib/json.rb`
 
 6. XML
 
-    > `fixtures/configuration.xml`
+    > Configuration:`fixtures/configuration.xml`
+    > Example      : `lib/xml.rb`
     
 7. Database
 
@@ -48,8 +54,11 @@ For this exercise choose at least two input sources:
     
 8. Webservice
 
-    > Run `rake service` to start the service.
-
+    > Run `ruby lib/sinatra.rb` to start the service.
+    > Visit __localhost:4567/configuration.json__
+    > Visit __localhost:4567/configuration.xml__
+    > Visit __localhost:4567/configuration.yml__
+    
 #### Conquering Input
 
 After selecting the input sources, implement the initial strategy that will load

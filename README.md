@@ -50,7 +50,7 @@ For this exercise choose at least two input sources:
     
 7. Database
 
-    > TO BE CREATED
+    > Example      : `lib/database.rb`
     
 8. Webservice
 

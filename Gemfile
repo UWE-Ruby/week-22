@@ -6,6 +6,8 @@ group :participant do
   gem 'json'
   gem 'nokogiri'
   gem 'sinatra'
+  gem 'activerecord'
+  gem 'sqlite3'
 end
 
 group :presenter do

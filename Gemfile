@@ -3,9 +3,9 @@ source :rubygems
 gem 'rake'
 
 group :participant do
-  gem 'rspec'
-  gem 'guard'
-  gem 'guard-rspec'
+  gem 'json'
+  gem 'nokogiri'
+  gem 'sinatra'
 end
 
 group :presenter do

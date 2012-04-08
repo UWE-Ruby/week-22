@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<configuration>
+  <environment name="development">
+    <hostName>http://localhost:8888</hostName>
+    <hostTitle>XML Config for Dummies</hostTitle>
+  </environment>
+  <environment name="production">
+    <hostName>http://xml-config.heroku.com</hostName>
+    <hostTitle>XML Configuration is Not Just for Java</hostTitle>
+  </environment>
+</configuration>

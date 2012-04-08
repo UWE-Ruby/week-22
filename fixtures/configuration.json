@@ -1,0 +1,12 @@
+{
+    "env": {
+        "dev": {
+            "hostname": "localhost:8080",
+            "name": "Configuration is King!"
+        },
+        "prod": {
+            "hostname": "json-presentation.heroku.com",
+            "name": "Convention over Configuration"
+        }
+    }
+}

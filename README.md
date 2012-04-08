@@ -32,15 +32,15 @@ For this exercise choose at least two input sources:
 
 4. Environment Variables
 
-    > Examples in `fixtures/command-parameters.md`
+    > Examples in `fixtures/environment-parameters.md`
     
 5. JSON
 
-    > View `fixtures/configuration.json`
+    > `fixtures/configuration.json`
 
 6. XML
 
-    > View `fixtures/configuration.xml`
+    > `fixtures/configuration.xml`
     
 7. Database
 

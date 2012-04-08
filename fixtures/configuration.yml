@@ -1,0 +1,10 @@
+#
+# Default configuration
+#
+---
+development:
+  host: localhost:9090
+  title: "WIP Configuration Presentation"
+production:
+  host: class-presentation.heroku.com
+  title: Configuration: The Final Frontier

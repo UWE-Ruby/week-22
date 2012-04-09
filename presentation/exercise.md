@@ -23,13 +23,6 @@ these values.
 
 !SLIDE quote
 
-## Conquering Input
-
-After selecting the input sources, implement the initial strategy that will load
-these values. 
-
-!SLIDE quote
-
 ## Unification
 
 Then, when you have all these values loaded, decide on way to

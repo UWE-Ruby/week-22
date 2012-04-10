@@ -1,6 +1,8 @@
-{ "name": "Monkey Patching", 
+{ "name": "Configuration", 
   "sections": [
     "intro.md",
+    "exercise.md",
+    "concepts.md",
     "exercise.md",
     "timer1.md",
     "retrospective.md",

@@ -1,73 +1,94 @@
 !SLIDE
 
-# Lesson
+# Additional Concepts
 
 !SLIDE
 
-## `deep_merge`
+## NilGuard
 
     @@@ Ruby
-    require 'active_support/core_ext'
-    
-    #deep_merge
-    
-!SLIDE
+    a ||= []
 
-## `HashWithIndifferentAccess`
+    a || (a = [])
 
 !SLIDE
+
+## Memoization
 
     @@@ Ruby
-    
     class Configuration
     
       def host
-        @config ||= (source_1['hostname'] || source_2['host])
+        @config ||= (source_1['hostname'] || source_2['host'])
       end
       
     end
     
 !SLIDE
 
-    @@@ Ruby
+## Multi-line Memoization
 
+    @@@ Ruby
     class Configuration
 
       def host
         @config ||= begin
-          source_1['hostname'] || source_2['host]
+        
+          # Do some stuff ...
+          source_1['hostname'] || source_2['host']
+          
         end
       end
   
     end
-    
+
 !SLIDE
 
+## DRY, I don't think so!
 
-    @@@Ruby
-    
+    @@@ Ruby
     class Configuration
-    
+      
+      def host
+        @config ||= (source_1['host'] || source_2['host'])
+      end
+      
+      def port
+        @config ||= (source_1['port'] || source_2['port'])
+      end
+      
+    end
+
+!SLIDE
+
+## When method calls go missing!
+
+    @@@ Ruby
+    class Configuration
+
       def method_methods(name,args,&block)
         
-        # given then name look through all the configuration
-        
+        source_1[name] || source_2[name]
+       
       end
-    
+
     end
     
-    
 !SLIDE
 
-    @@@Ruby
+## Lots of possibilities
 
+    @@@ Ruby
     class Configuration
 
       def method_methods(name,args,&block)
-    
-        # given then name look through all the configuration
-        # instead of just returning the value create a method
-    
+        
+        # Becareful, this could be dangerous...
+        
+        define_method name do
+          source_1[name] || source_2[name]
+        end
+   
       end
 
     end

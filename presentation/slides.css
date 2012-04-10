@@ -49,7 +49,11 @@ a:visited {
 .sh_ruby {
   background-image:url('images/cross_scratches.png'); 
   border-radius :15px;
-  
+}
+
+.content > pre {
+  padding: 20px;
+  font-size: 200%;
 }
 
 

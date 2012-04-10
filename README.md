@@ -107,6 +107,12 @@ __flexible__.
   
 ### Reading
 
+* [Ruby Metaprogramming](http://pragprog.com/book/ppmetr/metaprogramming-ruby)
+
+    > Chapter 1 - Sections 1.5 through 1.7
+    >
+    > Appendix A - A.1 through A.3
+    >
 
 Similar to the exploration of `Rake` and `ActiveSupport` in the previous
 reading. Examining and exploring code is the most fruitful way to learn to be a

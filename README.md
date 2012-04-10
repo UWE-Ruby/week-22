@@ -108,6 +108,58 @@ __flexible__.
 ### Reading
 
 
+Similar to the exploration of `Rake` and `ActiveSupport` in the previous
+reading. Examining and exploring code is the most fruitful way to learn to be a
+better developer. There are a number of libraries that you have likely employed
+that provides a flexible configuration system. Explore these frameworks. Attempt
+to answer the retrospective questions.
+
+Each of the sections I have tried to outline a good starting point of where to
+being your examination. With all of these frameworks the accompanying tests are 
+also great places as well.
+
+* [Cucumber](https://github.com/cucumber/cucumber)
+
+    > Cucumber employs a system of default options, command-line options, 
+    > and user profiles.
+    >
+    > [cucumber/lib/cucumber/cli](https://github.com/cucumber/cucumber/tree/master/lib/cucumber/cli)
+
+
+* [RSpec](https://github.com/rspec/rspec-core)
+
+    > RSpec uses a local config file, global config file, command-line options 
+    > and then to top it off provides the ability to further augment 
+    > configuration through a [block-based configuration system](https://www.relishapp.com/rspec/rspec-core/v/2-9/docs/configuration/custom-settings).
+    >
+    > Start with the  [Runner](https://github.com/rspec/rspec-core/blob/master/lib/rspec/core/runner.rb) class
+    >
+    > Then look at [ConfigurationOptions](https://github.com/rspec/rspec-core/blob/master/lib/rspec/core/configuration_options.rb)
+    >
+
+* [Rails](https://github.com/rails/rails)
+
+  > Rails is a large beast, so do not get lost and do not wander too far. Here
+  > the object is simply to understand initially how Rails starts up.
+  >
+  > Start with the 
+  > [bin](https://github.com/rails/rails/blob/master/railties/bin/rails)
+  >
+  > That should lead you to the
+  > [cli](https://github.com/rails/rails/blob/master/railties/lib/rails/cli.rb)
+  >
+  >
+  > What does the `.railsrc` do for your Rails?
+  > 
+  > Take a look at
+  > [script_rails_loader](https://github.com/rails/rails/blob/master/railties/lib/rails/script_rails_loader.rb)
+  >
+  > What happens in this command when you execute it within a rails application?
+  > 
+  > Then to the various
+  > [commands](https://github.com/rails/rails/tree/master/railties/lib/rails/commands)
+  > 
+
 ### Further Exercise
 
 Within the short time allotted to the exercise it was likely that you were
@@ -121,3 +173,5 @@ this additional time finish your initial implementation and then:
   
 * Provide the ability to support but the origin configuration source and this
   new modified configuration source (this may be a configuration difference).
+  
+* Copy a configuration feature from Cucumber or RSpec

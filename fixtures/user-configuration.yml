@@ -3,8 +3,8 @@
 #
 ---
 development:
-  host: localhost:4567
+  host: "localhost:4567"
   title: "User Specific Presentation"
 production:
-  host: personal-presentation.heroku.com
+  host: "personal-presentation.heroku.com"
   title: "Config, Config Such a Dish"

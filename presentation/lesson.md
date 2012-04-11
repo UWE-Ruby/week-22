@@ -19,7 +19,7 @@
     class Configuration
     
       def host
-        @config ||= (source_1['hostname'] || source_2['host'])
+        @host ||= (@source_1['hostname'] || @source_2['host'])
       end
       
     end
@@ -32,10 +32,10 @@
     class Configuration
 
       def host
-        @config ||= begin
+        @host ||= begin
         
           # Do some stuff ...
-          source_1['hostname'] || source_2['host']
+          @source_1['hostname'] || @source_2['host']
           
         end
       end
@@ -50,11 +50,11 @@
     class Configuration
       
       def host
-        @config ||= (source_1['host'] || source_2['host'])
+        @host ||= (@source_1['host'] || @source_2['host'])
       end
       
       def port
-        @config ||= (source_1['port'] || source_2['port'])
+        @port ||= (@source_1['port'] || @source_2['port'])
       end
       
     end
@@ -66,9 +66,9 @@
     @@@ Ruby
     class Configuration
 
-      def method_methods(name,args,&block)
+      def method_missing(name,args,&block)
         
-        source_1[name] || source_2[name]
+        @source_1[name] || @source_2[name]
        
       end
 
@@ -81,12 +81,12 @@
     @@@ Ruby
     class Configuration
 
-      def method_methods(name,args,&block)
+      def method_missing(name,args,&block)
         
         # Becareful, this could be dangerous...
         
         define_method name do
-          source_1[name] || source_2[name]
+          @source_1[name] || @source_2[name]
         end
    
       end

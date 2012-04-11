@@ -80,7 +80,9 @@
     @@@ Ruby
     require 'nokogiri'
 
-    JSON.parse file_contents
+    config_data = Nokogiri::XML(file_contents)
+    
+    config_data.xpath('environment')
 
 !SLIDE
 
